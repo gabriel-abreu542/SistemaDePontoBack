@@ -1,4 +1,7 @@
 package br.com.projetos.repository;
 
-public class UserRepository {
+import br.com.projetos.models.entities.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
 }
